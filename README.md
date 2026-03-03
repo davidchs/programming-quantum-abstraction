@@ -7,7 +7,7 @@ Este repositorio contiene el código fuente para la implementación en Qiskit de
 El modelo desarrollado en este proyecto presenta las siguientes características técnicas:
 
 * **Arquitectura de registros múltiples:** Distribución del procesamiento de las variables lógicas mediante la inicialización de estados entrelazados tipo GHZ. Esto permite la evaluación simultánea y correlacionada de distintas cláusulas de la fórmula.
-* **Abstracciones de lógica cuántica:** Diseño modular de operadores booleanos de fase (`PhaseAND`, `PhaseNAND`, `PhaseNOR`). Estos operadores permiten marcar con una fase $\pi$ los estados solución sin requerir la síntesis manual del circuito a nivel de compuertas elementales.
+* **Abstracciones de lógica cuántica:** Diseño modular de operadores booleanos de fase (`PhaseAND`, `PhaseNAND`, `PhaseOR` y `PhaseNOR`). Estos operadores permiten marcar con una fase $\pi$ los estados solución.
 * **Diseño de oráculos eficientes:** Integración de oráculos hermíticos para la evaluación de desigualdades y relaciones de equivalencia en aritmética modular (`<`, `>=`, `=`, intervalos). Se emplean las estrategias de optimización para compuertas multicontroladas documentadas por Sanchez-Rivero et al. (2025).
 * **Operador de difusión adaptado:** Implementación de un difusor de Grover específico para esta topología. Dicho operador gestiona rigurosamente el desentrelazamiento, la reflexión espacial sobre la media y el restablecimiento del entrelazamiento.
 
